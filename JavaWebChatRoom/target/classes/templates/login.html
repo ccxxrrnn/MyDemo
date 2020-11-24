@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<script type="text/javascript" src="/js/jquery-1.8.3.js"></script>
+<body>
+    <h5>输入用户名</h5>
+    <form id="login_from" >
+        <h3>用户名</h3>
+        <label>
+            <input type="text"  name="userName"/>
+        </label>
+        <input type="button" id="loginBtn" value="进入">
+    </form>
+
+</body>
+<script type="text/javascript">
+    $("#loginBtn").click(function (){
+        $.ajax({
+                url : "/user/index/enter.do",
+                dataType:"json",
+                data:$("#login_from").serialize(),
+                type: "post",
+                success:function(obj){
+                    if (obj.state === 1){
+                        location.href = "/main";
+                    }else{
+                        alert(obj.message);
+                    }
+                }
+            }
+        )
+    });
+</script>
+
+</html>

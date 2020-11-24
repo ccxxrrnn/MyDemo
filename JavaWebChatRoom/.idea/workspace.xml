@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6ddc59b2-d49a-43e1-96b6-00fbc402942f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="F:\maven\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kPc66dLk9NjytHi0fmRegKnL90" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/xw/webchatroom/NettyServer" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\IdeaProjects\JavaWebChatRoom\src\main\resources\static\js" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xw.webchatroom.NettyServer" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\IdeaProjects\JavaWebChatRoom\src\main\java\com\xw\webchatroom\NettyServer" />
+      <recent name="C:\Users\lenovo\IdeaProjects\JavaWebChatRoom\src\main\java\com\xw\webchatroom\component" />
+      <recent name="C:\Users\lenovo\IdeaProjects\JavaWebChatRoom\src\main\resources\templates" />
+      <recent name="C:\Users\lenovo\IdeaProjects\JavaWebChatRoom\src\main\resources\static" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ChatRoomMain8080" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="JavaWebChatRoom" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.xw.webchatroom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xw.webchatroom.ChatRoomMain8080" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.ChatRoomMain8080" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\lenovo\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ddc59b2-d49a-43e1-96b6-00fbc402942f" name="Default Changelist" comment="" />
+      <created>1605605488270</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605605488270</updated>
+      <workItem from="1605605491964" duration="4762000" />
+      <workItem from="1605865157184" duration="1597000" />
+      <workItem from="1606043760089" duration="8504000" />
+      <workItem from="1606093268624" duration="7993000" />
+      <workItem from="1606129531988" duration="5589000" />
+      <workItem from="1606135790534" duration="1525000" />
+      <workItem from="1606137554685" duration="242000" />
+      <workItem from="1606179465706" duration="27725000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" width="1150" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606101310796">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" width="1150" height="689" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1606101310796" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1606206979468">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606206979468" />
+    <state x="577" y="308" key="Github.CreateGistDialog" timestamp="1606200801757">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="577" y="308" key="Github.CreateGistDialog/0.0.1536.824@0.0.1536.824" timestamp="1606200801757" />
+    <state width="1492" height="151" key="GridCell.Tab.0.bottom" timestamp="1606216539017">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="151" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606216539017" />
+    <state width="1492" height="151" key="GridCell.Tab.0.center" timestamp="1606216539016">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="151" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1606216539016" />
+    <state width="1492" height="151" key="GridCell.Tab.0.left" timestamp="1606216539016">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="151" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1606216539016" />
+    <state width="1492" height="151" key="GridCell.Tab.0.right" timestamp="1606216539016">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="151" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1606216539016" />
+    <state width="1492" height="151" key="GridCell.Tab.1.bottom" timestamp="1606216539019">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="151" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606216539019" />
+    <state width="1492" height="151" key="GridCell.Tab.1.center" timestamp="1606216539017">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="151" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1606216539017" />
+    <state width="1492" height="151" key="GridCell.Tab.1.left" timestamp="1606216539017">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="151" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1606216539017" />
+    <state width="1492" height="151" key="GridCell.Tab.1.right" timestamp="1606216539018">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="151" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1606216539018" />
+    <state width="1492" height="261" key="GridCell.Tab.2.bottom" timestamp="1606216539010">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1606216539010" />
+    <state width="1492" height="261" key="GridCell.Tab.2.center" timestamp="1606216539010">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1606216539010" />
+    <state width="1492" height="261" key="GridCell.Tab.2.left" timestamp="1606216539010">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1606216539010" />
+    <state width="1492" height="261" key="GridCell.Tab.2.right" timestamp="1606216539010">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1606216539010" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1605608598795">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1605608598795" />
+    <state x="270" y="0" key="SettingsEditor" timestamp="1606046439079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606046439079" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1606215455816">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1606215455816" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1606215455816">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1606215455816" />
+    <state x="321" y="148" width="894" height="604" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1606201396280">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="321" y="148" width="894" height="604" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1606201396280" />
+    <state x="178" y="107" key="new project wizard" timestamp="1606216478700">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="107" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1606216478700" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1606201945787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1606201945787" />
+  </component>
+</project>
