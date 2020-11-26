@@ -8,7 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="JavaWebChatRoom" />
-        <module name="MyDemo" />
+        <module name="snatch-red-envelope" />
+        <module name="general-model" />
       </profile>
     </annotationProcessing>
   </component>

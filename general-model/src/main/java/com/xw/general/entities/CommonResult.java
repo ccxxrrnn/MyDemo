@@ -1,4 +1,4 @@
-package com.xw.webchatroom.entities;
+package com.xw.general.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

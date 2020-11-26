@@ -1,15 +1,12 @@
 package com.xw.webchatroom.controller;
 
-import com.xw.webchatroom.NettyServer.MyServer;
-import com.xw.webchatroom.entities.CommonResult;
-import com.xw.webchatroom.entities.User;
+import com.xw.general.entities.CommonResult;
+import com.xw.general.entities.User;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 import java.util.*;
 
