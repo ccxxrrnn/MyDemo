@@ -53,9 +53,7 @@ public class MyService {
             int sal = 0;
             //拿到随机金额
             sal = random.nextInt(floatUp - floatLow + 1) + floatLow;
-//            System.out.println("添加的 redId" + redId + "金额" + sal);
             count = count - sal;
-//            System.out.println("剩余金额" + count);
             jedis.lpush("list:"+redId, String.valueOf(sal));
             jedis.sadd("set:"+redId, String.valueOf(people));
             people--;
@@ -84,7 +82,6 @@ public class MyService {
      *
      * @param redId
      * @return
-     * //利用set的不可重复性，假如有用户在取，就把index存入 set 发现就一直循环去取，直到红包没有
      * 分布式锁
      */
     public  double getRedPaper(String redId,String userId) throws InterruptedException {
@@ -94,30 +91,22 @@ public class MyService {
             //没有红包了
             throw new MyException("没红包");
         }
-//        System.out.println(userId +"开始随机拿去了");
         MyRedisLock myRedisLock = new MyRedisLock();
 
-//        System.out.println(userId + "    取得的锁为" + num);
-        //取到第一个数 lPop 的值,虽然值可能重复，忽略这种情况，也可以在
         String[] nums = myRedisLock.acquire_lock(redId);
-//        System.out.println(Arrays.toString(nums));
         if( nums != null){
             //释放锁
-//            System.out.println( userId+"用户已经获得了锁 = " + uuId);
             String uuId = nums[2];
 
             jedis.srem("set:" + redId,nums[0]); // 删除掉值已经有锁了，其他人拿不到
 //            jedis.lrem("list:" + redId,1,nums[1]); //liat删除index会变
             if(myRedisLock.release_lock(nums[0],uuId)){
                 //释放锁成功
-//                System.out.println(userId + " :释放锁成功");
             }else{
-//                System.out.println(userId + "释放锁失败 逻辑处理");
                 throw new MyException(userId + "释放锁失败");
             }
         }else{
             //获取失败
-//            System.out.println(userId + "获取锁失败");
             throw new MyException(userId + "抢红包失败，请重试");
         }
         JedisUtil.closeJedis(jedis);

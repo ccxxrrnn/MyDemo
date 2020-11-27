@@ -26,24 +26,21 @@ import java.util.UUID;
  */
 public class MyRedisLock {
 
-    //初始化
-    private final  long acquire_time = 10 ;  //单位为秒 ，用户请求等待的时间
-    private final  int time_out = 10 ; //单位为秒 ，定义锁到一定时间自动释放，避免死锁
-
-
 
     //主方法   获得锁  和 释放锁
 
 
     /**
      * 通过锁试名来尝获取锁
-     * @param lockName
+     * @param redId
      * @return
      */
     public  String[] acquire_lock(String redId) throws InterruptedException {
         //创建一个唯一标识  使用当前线程的id
         String uuId = UUID.randomUUID().toString();
         LocalTime dateTime = LocalTime.now();
+        //单位为秒 ，用户请求等待的时间
+        long acquire_time = 10;
         LocalTime end = dateTime.plusSeconds(acquire_time);
 
 
@@ -53,21 +50,19 @@ public class MyRedisLock {
 
             String index = jedis.srandmember("set:"+redId);
             String lockName = jedis.lindex("list:" + redId, Long.parseLong(index ) - 1);
+            //单位为秒 ，定义锁到一定时间自动释放，避免死锁
+            int time_out = 10;
             if( jedis.setnx("lock:" + index, uuId) == 1){
                 //1 则表示插入成功，那么锁可以被获取,设置超时时间
-                jedis.expire("lock:" + index,time_out);
+                jedis.expire("lock:" + index, time_out);
                 JedisUtil.closeJedis(jedis);
                 return new String[]{index,lockName,uuId};
             }else if (jedis.ttl("lock:" + index) >= 0){
                 //判断锁的剩余时间 小于0 则表示已经过期，那么延长时间
-                jedis.expire("lock:" + index,time_out);
+                jedis.expire("lock:" + index, time_out);
             }
-//            System.out.println("尝试去拿" + index);
-//            System.out.println("现在还有锁没有被拿走" );
-//            for (String s : jedis.smembers("set:" + redId)){
-//                System.out.print(s + " ");
-//            }
             JedisUtil.closeJedis(jedis);
+
 //            Thread.sleep(1);
         }
         return null;
@@ -78,18 +73,16 @@ public class MyRedisLock {
 
     /**
      * 释放锁
-     * @param lockName
+     * @param index
      * @param uuId
      * @return
      */
     public  boolean release_lock(String index,String uuId){
         Jedis jedis = JedisUtil.getJedis();
-//        System.out.println(uuId + "释放锁");
-//        Pipeline pipelined = jedis.pipelined();
         index = "lock:" + index;
         while (true){
             try {
-//                pipelined.watch(lockName);  //监视数据
+//              //监视数据
                 jedis.watch(index);
                 String lock_value = jedis.get(index);
                 if (lock_value == null) {
@@ -97,24 +90,24 @@ public class MyRedisLock {
                     return true;
                 }
                 if (lock_value.equals(uuId)) {
-//                    System.out.println(uuId + "开启事务，删除");
-//                    pipelined.multi();//开启事务
+                    //开启事务
                     Transaction multi = jedis.multi();
-//                    pipelined.del(lock_value);
                     multi.del(lock_value);
-//                    pipelined.exec(); //提交事务  //可能报错 多线程
+                    //可能报错 多线程
                     multi.exec();
                     multi.close();
-//                    System.out.println(uuId + "事务完成");
+
                     JedisUtil.closeJedis(jedis);
                     return true;
                 }
                 jedis.unwatch();
                 break;
             }catch (Exception e){
+
 //                System.out.println(e.getMessage());
             }
         }
+
         JedisUtil.closeJedis(jedis);
         return false;
     }
