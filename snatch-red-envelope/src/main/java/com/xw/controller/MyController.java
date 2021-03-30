@@ -38,11 +38,9 @@ public class MyController {
         //现实中肯定是每个人都去数据库请求  就不采用上一种方式 return int型 即他的金额 随机拿取
         try {
             double res = myService.getRedPaper(redId,userId);
-//            System.out.println("用户 id " + userId + "抢到了金额为 " + res);
             return new CommonResult<>(1);
         }catch (MyException | InterruptedException e){
             System.out.println(e.getMessage());
-//            System.out.println("用户 id " + userId + "大意了， 没闪" );
             return new CommonResult<>(0,e.getMessage());
         }
     }

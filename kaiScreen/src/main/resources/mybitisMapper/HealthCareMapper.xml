@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bonc.mapper.HealthCareMapper">
+<!--    热门药店排名 , 排名 rank,药店 hosName,用户数 peoNums -->
+    <select id="selectHospitalRank" resultType="java.util.HashMap">
+        SELECT
+            a.rank_desc 'rank',
+            a.pharmacy_name hosName,
+            a.total_num peoNums
+        FROM
+            pharmacy_hot a
+        WHERE
+            a.day_id = #{nowDate}
+    </select>
+<!--    热门药品排名 , 排名 rank,药品 medName,用户数 peoNums-->
+    <select id="selectMedicalRank" resultType="java.util.HashMap">
+        SELECT
+            a.rank_desc 'rank',
+            a.pharmacy_name medName,
+            a.total_num peoNums
+        FROM
+            pharmacy_medicine_hot a
+        WHERE
+            a.day_id = #{nowDate}
+    </select>
+<!--    时间处方占比和总处方数 total-->
+    <select id="selectPrescriptionData" resultType="java.util.HashMap">
+        SELECT
+            a.total_num total,
+            a.otc_pro 'otc',
+            a.rx_pro 'rx'
+        FROM
+            pharmacy_prescription_type a
+    </select>
+<!--    药品维度占比和总数-->
+    <select id="selectMedicinalData" resultType="java.util.HashMap">
+        SELECT
+            a.total_num total,
+            a.wm_pro 'wm',
+            a.tcm_pro 'tcm',
+            a.cm_pro 'cm'
+        FROM
+            pharmacy_dimension a
+    </select>
+<!--    各时间段购买药品人数-->
+    <select id="selectMedicalBuyDistribution" resultType="java.util.HashMap">
+        SELECT
+            a.interval_time dataX,
+            a.total_num chartData
+        FROM
+            pharmacy_interval a
+    </select>
+</mapper>

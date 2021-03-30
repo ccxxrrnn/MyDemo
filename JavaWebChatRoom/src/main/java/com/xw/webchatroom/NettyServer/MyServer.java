@@ -74,8 +74,8 @@ public class MyServer {
                             //自定义的handler  处理业务逻辑
                             pipeline.addLast(new MyTextWebSocketFrameHandler());
                             /*
-                            对应 WebSocket   数据以帧 形式传递
-                            WebSocketServerProtocolHandler  核心功能 将http 升级为 ws 协议 保持长连接
+                            对应 WebSocke   数据以帧 形式传递
+                            WebSocketServerPtrotocolHandler  核心功能 将http 升级为 ws 协议 保持长连接
                             是通过状态码 101
                              */
                             pipeline.addLast(new WebSocketServerProtocolHandler("/ws", null, true, 65536 * 10));
