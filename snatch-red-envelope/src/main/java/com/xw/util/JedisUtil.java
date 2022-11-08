@@ -42,20 +42,6 @@ public class JedisUtil {
         jedisPool = new JedisPool(config, "127.0.0.1", 6379, redisTimeout,"123456");
     }
 
-//    public static Object getParamentFromProperties(String key) {
-//        InputStream is = JedisUtil.class.getClassLoader().getResourceAsStream("application.yml");
-//        assert is != null;
-//        BufferedReader br = new BufferedReader(new InputStreamReader(is));
-//        Properties props = new Properties();
-//        try {
-//            props.load(br);
-//            return props.get(key);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        return null;
-//    }
-
 
     /**
      * 获取连接方法
